@@ -1,0 +1,20 @@
+.container {
+  @extend .block-group;
+}
+
+.main,
+.sidebar {
+  @extend .block;
+}
+
+@media(min-width:760px) {
+  .main {
+    width: 100%/12*8;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    width: 100%/12*4;
+    padding-left: 20px;
+  }
+}
