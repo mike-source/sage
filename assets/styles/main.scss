@@ -1,12 +1,17 @@
-@import "common/variables";
-@import "common/normalize";
+/*! normalize.css added via manifest.json/bower here */
 
+@import "common/variables";
+
+/*! wiredep css: */
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 // endbower
 
-@import "common/global";
+
 @import "components/grid";
+
+/*! unb css: */
+@import "common/global";
 @import "components/wp-classes";
 @import "layouts/base";
 @import "layouts/header";
