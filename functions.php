@@ -17,6 +17,7 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/shortcodes.php',        // Theme specific shortcodes
   'lib/login.php',             // Override login styling
+  'lib/google-analytics.php'   // Integrate google-analytics (just add 'UA-XXXXX-Y' code)
 ];
 
 foreach ($sage_includes as $file) {
