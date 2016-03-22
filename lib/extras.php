@@ -37,3 +37,8 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
  */
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+/**
+ * Force Hide Admin Bar for all users
+ */
+add_filter('show_admin_bar', '__return_false');
