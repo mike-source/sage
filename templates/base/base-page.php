@@ -11,7 +11,7 @@ use Roots\Sage\Wrapper;
   <body <?php body_class(); ?>>
     <!--[if IE]>
       <div class="alert alert-warning">
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
       </div>
     <![endif]-->
     <?php
@@ -22,7 +22,7 @@ use Roots\Sage\Wrapper;
       <div class="content container">
         <main class="main">
 
-          A page
+          <h1>A page</h1>
 
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
