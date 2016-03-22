@@ -7,8 +7,12 @@
   @extend .block;
 }
 
+.main {
+  width: 100%;
+}
+
 @media(min-width:760px) {
-  .main {
+  .main--withsidebar {
     width: 100%/12*8;
     padding-right: 20px;
   }
