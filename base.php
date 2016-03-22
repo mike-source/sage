@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap" role="document">
       <div class="content container">
-        <main class="main <?php if (Setup\display_sidebar()) : ?>main--withsidebar<?php endif; ?>">
+        <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
