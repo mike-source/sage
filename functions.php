@@ -16,6 +16,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/shortcodes.php',        // Theme specific shortcodes
+  'lib/login.php',             // Override login styling
 ];
 
 foreach ($sage_includes as $file) {
