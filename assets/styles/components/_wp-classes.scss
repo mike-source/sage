@@ -17,14 +17,3 @@
 .alignright {
   text-align: right;
 }
-
-// Captions
-.wp-caption {
-  @extend .thumbnail;
-}
-
-// Text meant only for screen readers
-.screen-reader-text {
-  @extend .sr-only;
-  @extend .sr-only-focusable;
-}
