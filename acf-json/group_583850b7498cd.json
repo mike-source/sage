@@ -158,6 +158,25 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_583c457c6a12c",
+                            "label": "Alt Tag",
+                            "name": "alt_tag",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_583c1d8809599",
                             "label": "Element ID (component)",
                             "name": "element_id",
@@ -200,5 +219,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480337173
+    "modified": 1480346018
 }

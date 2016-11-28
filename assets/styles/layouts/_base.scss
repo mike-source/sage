@@ -1,3 +1,42 @@
+.wrapper,
 .container {
-  @extend .block-group;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+
+    @extend .block-group;
+}
+
+.block {
+    padding: 10px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.col-1-1 {
+    .block {
+        width: 100% / 2 * 1;
+    }
+}
+
+.col-1-1-1 {
+    .block {
+        width: 100% / 3 * 1;
+    }
+}
+
+.col-1-1-1-1 {
+    .block {
+        width: 100% / 4 * 1;
+    }
 }
