@@ -15,5 +15,13 @@
                 <?php get_template_part('templates/components/image'); ?>
 
               </div>
+<?php endif;
+
+      if(get_row_layout() == 'image_slider'):
+?>
+              <div <?php if(get_sub_field('element_id')): ?>id="<?php echo str_replace(' ', '-', strtolower(get_sub_field('element_id'))); ?>" <?php endif;?>class="slider">
+                <?php get_template_part('templates/components/slider'); ?>
+
+              </div>
 <?php endif; ?>
 <?php endwhile; endif; ?>

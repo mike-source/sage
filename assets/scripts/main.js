@@ -19,6 +19,18 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        $('.owl-carousel').owlCarousel({
+          items: 1,
+          autoheight: true,
+          nav: true,
+          dots: true,
+          loop: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          animateOut: 'fadeOut'
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
