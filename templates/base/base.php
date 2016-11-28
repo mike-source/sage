@@ -20,7 +20,9 @@ use Roots\Sage\Wrapper;
 
   <div class="wrap" role="document">
     <main class="main">
+
       <?php include Wrapper\template_path(); ?>
+
     </main><!-- /.main -->
   </div><!-- /.wrap -->
 
