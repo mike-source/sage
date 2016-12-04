@@ -13,11 +13,12 @@
 
 /*! unb custom css: */
 @import "common/global";
+@import "layouts/base";
 @import "components/wp-classes";
 @import "components/header";
 @import "components/sidebar";
 @import "components/footer";
-@import "layouts/base";
+@import "components/accordion";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";

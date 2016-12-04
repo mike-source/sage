@@ -23,5 +23,13 @@
                 <?php get_template_part('templates/components/slider'); ?>
 
               </div>
+<?php endif;
+
+      if(get_row_layout() == 'accordion'):
+?>
+              <div <?php if(get_sub_field('element_id')): ?>id="<?php echo str_replace(' ', '-', strtolower(get_sub_field('element_id'))); ?>" <?php endif;?>class="accordion">
+                <?php get_template_part('templates/components/accordion'); ?>
+
+              </div>
 <?php endif; ?>
 <?php endwhile; endif; ?>

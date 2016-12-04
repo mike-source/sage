@@ -1,0 +1,30 @@
+.accordion {
+    display: block;
+}
+.accordion__item {
+    display: block;
+    overflow: hidden;
+    .title {
+        width: 100%;
+        margin: 10px 0;
+        a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+            outline: 0 none;
+        }
+    }
+    .text {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+    }
+    &:target {
+        .text {
+            height: auto;
+            max-height: 300px;
+            transition: all 0.5s ease-in;
+        }
+    }
+}
