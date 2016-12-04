@@ -16,15 +16,12 @@
         }
     }
     .text {
-        max-height: 0;
+        height: 0;
         overflow: hidden;
-        transition: all 0.5s ease-out;
     }
     &:target {
         .text {
             height: auto;
-            max-height: 300px;
-            transition: all 0.5s ease-in;
         }
     }
 }
