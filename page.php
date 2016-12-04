@@ -1,4 +1,7 @@
+
 <?php
+
+  get_template_part('templates/components/page-header');
 
   while(have_posts()): the_post();
 
