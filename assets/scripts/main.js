@@ -20,6 +20,13 @@
       init: function() {
         // JavaScript to be fired on all pages
 
+        $('#mobile-nav-toggle').on('click', function () {
+          $(this).toggleClass('active');
+          $('#primary-nav').toggleClass('active');
+        });
+
+        var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
         $('.owl-carousel').owlCarousel({
           items: 1,
           autoheight: true,
@@ -29,6 +36,44 @@
           autoplay: true,
           autoplaySpeed: 3000,
           animateOut: 'fadeOut'
+        });
+
+        $('.accordion__item .title, .accordion__icon').on('click', function() {
+          $(this).parent().toggleClass('opened');
+        });
+
+        var $grid = $('.archive > .container').imagesLoaded( function() {
+          // init Masonry after all images have loaded
+          $grid.masonry({
+            itemSelector: '.post',
+            percentPosition: true,
+            resize: true
+          });
+        });
+
+        if(viewportWidth > 570) {
+          $('.sell-cisco-form, .titles--sell').addClass('active');
+        }
+
+        $('#sell-form-toggle').on('click', function() {
+          $('.buy-cisco-form, .titles--buy').removeClass('active');
+          $('.sell-cisco-form, .titles--sell').addClass('active');
+        });
+        $('#buy-form-toggle').on('click', function() {
+          $('.sell-cisco-form, .titles--sell').removeClass('active');
+          $('.buy-cisco-form, .titles--buy').addClass('active');
+        });
+
+        $('#sell-form-toggle--mob').on('click', function() {
+          $('.sell-cisco-form, .titles--sell').toggleClass('active');
+        });
+        $('#buy-form-toggle--mob').on('click', function() {
+          $('.buy-cisco-form, .titles--buy').toggleClass('active');
+        });
+
+        $("a[href='#top']").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
         });
 
       },

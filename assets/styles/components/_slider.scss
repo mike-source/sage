@@ -1,0 +1,29 @@
+.slider {
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -40px;
+    font-size: 0;
+  }
+  .owl-prev,
+  .owl-next {
+    background-image: url('../images/slider-arrows.png');
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 40px;
+
+  }
+  .owl-prev {
+    float: left;
+    margin-left: 30px;
+  }
+  .owl-next {
+    float: right;
+    background-position: -46px;
+    margin-right: 30px;
+  }
+}

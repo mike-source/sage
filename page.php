@@ -18,6 +18,8 @@
         if(get_row_layout() == 'G-1_col') get_template_part('templates/layouts/G-1_col');
         if(get_row_layout() == '1-3_col') get_template_part('templates/layouts/1-3_col');
         if(get_row_layout() == '3-1_col') get_template_part('templates/layouts/3-1_col');
+        if(get_row_layout() == 'news-grid') get_template_part('templates/layouts/news-grid');
+        if(get_row_layout() == 'callback-forms') get_template_part('templates/layouts/callback-forms');
 
       endwhile;
     endif;

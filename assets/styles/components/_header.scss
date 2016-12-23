@@ -1,0 +1,119 @@
+.site-header {
+    .container {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    #mobile-nav-toggle {
+        font-size: 30px;
+        display: none;
+        float: left;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    .primary-nav {
+        float: left;
+    }
+    .call {
+        font-size: 15px;
+        float: right;
+        height: 65px;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        p {
+            font-size: 13px;
+            margin-bottom: -2px;
+        }
+        a {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 16px;
+            color: $white;
+        }
+    }
+    .brand {
+        float: left;
+    }
+    .tagline {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        float: right;
+        margin: 15px 0 0 0;
+        color: $brand-1;
+    }
+}
+
+@media(max-width: 920px) {
+    .site-header {
+        .primary-nav,
+        .call {
+            float: none;
+        }
+        .primary-nav {
+            height: auto;
+            padding-bottom: 0;
+            text-align: center;
+            li {
+            }
+        }
+        .call {
+            padding-top: 0;
+        }
+    }
+}
+
+@media(max-width: 660px) {
+    .brand,
+    .tagline {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 590px) {
+    .site-header {
+        #mobile-nav-toggle {
+            display: block;
+            margin: 7.5px 0;
+            .fa-times {
+                display: none;
+            }
+            &.active {
+                .fa-bars {
+                    display: none;
+                }
+                .fa-times {
+                    display: block;
+                }
+            }
+        }
+        .primary-nav {
+            display: none;
+            clear: both;
+            padding-bottom: 30px;
+            &.active {
+                display: block;
+            }
+            li {
+                display: block;
+            }
+            a {
+                padding: 10px 0;
+            }
+        }
+        .call {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            padding: 10px 0;
+        }
+    }
+}
+
+.page-header h1 {
+    @extend .h2;
+}

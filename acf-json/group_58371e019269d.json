@@ -1778,6 +1778,106 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "584872a14d2ae",
+                    "name": "news-grid",
+                    "label": "News Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_584872a14d2af",
+                            "label": "Element ID (layout section)",
+                            "name": "element_id",
+                            "type": "text",
+                            "instructions": "HTML ID for this element.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "584b034ccc610",
+                    "name": "callback-forms",
+                    "label": "Callback Forms",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_584b0359cc611",
+                            "label": "Element ID (layout section)",
+                            "name": "element_id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_584b0385cc613",
+                            "label": "Left Column",
+                            "name": "block_1",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 1,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_584b0385cc614",
+                                    "label": "Components",
+                                    "name": "components",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "clone": [
+                                        "group_584b03b6790ea"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1791,7 +1891,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 10,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -1807,5 +1907,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1480337254
+    "modified": 1481311907
 }

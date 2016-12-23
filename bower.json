@@ -10,7 +10,9 @@
     "normalize-css": "^4.0.0",
     "owl.carousel": "owl-carousel2#^2.1.6",
     "html5shiv": "^3.7.3",
-    "respond": "^1.4.2"
+    "respond": "^1.4.2",
+    "masonry": "^4.1.0",
+    "imagesloaded": "^4.1.1"
   },
   "overrides": {
     "owl.carousel": {
@@ -18,6 +20,11 @@
         "dist/owl.carousel.js",
         "dist/assets/owl.carousel.css",
         "src/scss/_theme.default.scss"
+      ]
+    },
+    "masonry": {
+      "main": [
+        "./dist/masonry.pkgd.js"
       ]
     }
   }

@@ -11,14 +11,21 @@
 @import "common/reset";
 @import "components/grid";
 
+/*! fonts: */
+@import "../fonts/lato/stylesheet";
+
 /*! unb custom css: */
-@import "common/global";
+@import "layouts/style-guide";
 @import "layouts/base";
+@import "common/global";
 @import "components/wp-classes";
 @import "components/header";
 @import "components/sidebar";
 @import "components/footer";
+@import "components/archive";
+@import "components/slider";
 @import "components/accordion";
+@import "components/image--title-overlay";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";

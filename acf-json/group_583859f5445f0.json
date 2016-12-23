@@ -39,7 +39,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": ""
+            "default_value": "#0682C5"
         },
         {
             "key": "field_58385a4f67b87",
@@ -107,5 +107,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480089840
+    "modified": 1481306300
 }

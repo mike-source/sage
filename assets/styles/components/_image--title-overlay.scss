@@ -1,0 +1,49 @@
+.image--title-overlay {
+  color: $white;
+  position: relative;
+  .overlay {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    padding: 0 30px;
+    .title {
+      @extend .h2;
+    }
+    .subtitle {
+      @extend .h3;
+      text-transform: none;
+    }
+    .btn {
+      margin: 20px 10px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .image--title-overlay {
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: auto;
+    }
+    .overlay {
+      .title {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      .subtitle {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .image--title-overlay {
+    .overlay {
+      margin-top: -90px;
+    }
+  }
+}

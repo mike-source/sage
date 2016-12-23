@@ -1,0 +1,49 @@
+{
+    "key": "group_584adcb9ef367",
+    "title": "Page Header",
+    "fields": [
+        {
+            "key": "field_584adcc5cb17b",
+            "label": "Show Page Header",
+            "name": "show_page_header",
+            "type": "true_false",
+            "instructions": "Shows the page title at the top of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1481306509
+}

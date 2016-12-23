@@ -20,7 +20,6 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap" role="document">
         <main class="main">
-          <h1>A single post</h1>
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
     </div><!-- /.wrap -->

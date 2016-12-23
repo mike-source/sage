@@ -1,0 +1,319 @@
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+.clearboth {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.transparent {
+    opacity: 0;
+}
+.not-in-use {
+    overflow: hidden;
+    height: 0;
+    margin: 0 !important;
+}
+.force-to-front {
+    z-index: 10000;
+}
+.centered {
+    text-align: center;
+}
+.brand-1 {
+    color: $brand-1;
+}
+.bg-brand-1 {
+    background-color: $brand-1;
+}
+.brand-2 {
+    color: $brand-2;
+}
+.bg-brand-2 {
+    background-color: $brand-2;
+}
+.brand-3 {
+    color: $brand-3;
+}
+.bg-brand-3 {
+    background-color: $brand-3;
+}
+.white {
+    color: $white;
+}
+.grey-1 {
+    color: $grey-1;
+}
+.grey-2 {
+    color: $grey-2;
+}
+.grey-3 {
+    color: $grey-3;
+}
+.grey-4 {
+    color: $grey-4;
+}
+.black {
+    color: $black;
+}
+.bg-white {
+    background: $white;
+}
+.bg-grey-1 {
+    background: $grey-1;
+}
+.bg-grey-2 {
+    background: $grey-2;
+}
+.bg-grey-3 {
+    background: $grey-3;
+}
+.bg-grey-4 {
+    background: $grey-4;
+}
+.bg-black {
+    background: $black;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    min-height: 100%;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.smallprint {
+    font-size: 12px !important;
+    line-height: 15px;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: $brand-1;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-3;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0 0 10px 0;
+}
+h1,
+.h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 74px;
+}
+h2,
+.h2 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+h3,
+.h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+
+hr {
+    width: 40px;
+    margin: 30px auto;
+    border: 1px solid $black;
+    border-top: 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.nav {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-left: -4px;
+        margin-bottom: 8px;
+    }
+    a {
+        display: block;
+        padding: 0 10px 2px;
+        text-transform: uppercase;
+        color: $white;
+        border-right: 1px solid $white;
+        &:hover {
+            text-decoration: none;
+            color: $brand-3;
+        }
+    }
+    li:first-child {
+        margin-left: 0;
+        a {
+            padding-left: 0;
+        }
+    }
+    li:last-child a {
+        padding-right: 0;
+        border-right: 0;
+    }
+    li.highlight a {
+        color: $brand-2;
+    }
+    @media (max-width: 760px) {
+        a {
+            border: 0;
+        }
+    }
+    @media (max-width: 600px) {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.primary-nav {
+    height: 65px;
+    padding: 26px 0;
+    background: $brand-1;
+}
+
+.footer-nav {
+    padding: 20px 0 20px;
+    text-align: center;
+    background: $grey-4;
+}
+
+.icon {
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.icon--chevrons {
+        width: 12px;
+        height: 11px;
+        background-image: url('../images/icon--chevrons.png');
+    }
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    display: inline-block;
+    padding: 12px 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+    }
+}
+.btn--inv {
+    color: $white;
+    border-color: $white;
+    &:hover {
+        color: $black;
+        border-color: $black;
+        background-color: $white;
+    }
+}
+
+form {
+    fieldset {
+        margin: 10px 0 0;
+        padding: 0;
+        border: 0;
+        label,
+        input,
+        textarea {
+            display: block;
+        }
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+            color: $black;
+        }
+        input {
+            line-height: 30px;
+            height: 30px;
+        }
+        textarea {
+            height: auto;
+        }
+        input,
+        textarea {
+            font-size: 14px;
+            width: 100%;
+            padding: 0 8px;
+            border: 0;
+            background: $white;
+            background-image: none;
+        }
+        .input--file {
+            height: 34px;
+            padding: 0;
+        }
+    }
+}
+
+.col-1__content {
+    text-align: center;
+}

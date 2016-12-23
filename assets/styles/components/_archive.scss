@@ -1,0 +1,28 @@
+.archive {
+    margin-bottom: 0;
+    .title {
+        text-transform: uppercase;
+    }
+    .date {
+        text-transform: uppercase;
+
+        @extend .smallprint;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    .post p {
+        line-height: 20px;
+    }
+    &.col-1-1-1 .block {
+        @media(max-width: 500px) {
+            width: 100%;
+        }
+    }
+}
+.navigation.pagination {
+    margin-bottom: 60px;
+    h2 {
+        @extend .h4;
+    }
+}

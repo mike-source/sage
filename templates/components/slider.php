@@ -8,5 +8,4 @@
                         <?php if(get_sub_field('link')): ?></a><?php endif; ?>
                     </div>
                     <?php $i++; endwhile; endif; ?>
-                  </div>
                 </div>

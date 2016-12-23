@@ -1,0 +1,97 @@
+/* (CSS for styling the style guide itself) */
+.style-guide-wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin: 60px auto;
+  .page-title {
+    padding: 20px 0;
+    .icon--logo {
+      margin: 0 auto;
+    }
+  }
+}
+.style-guide-wrapper > div {
+  clear: both;
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+.style-guide-section-title,
+.style-guide-section {
+  float: left;
+}
+
+.style-guide-section-title {
+  display: block;
+  height: 100%;
+  width: 30%;
+}
+
+.style-guide-section {
+  width: 70%;
+}
+
+.colors > .style-guide-section > div {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.colors > .style-guide-section > p {
+  float: left;
+}
+
+.bg-for-white-icons {
+  background: $brand-1;
+}
+
+.iconography > .style-guide-section > div {
+  float: left;
+  margin: 5px 20px;
+}
+.iconography > .style-guide-section > div p,
+.iconography > .style-guide-section > .bg-for-white-icons > div p {
+  margin-top: 6px;
+}
+
+.bg-for-white-icons {
+  margin-top: 30px;
+  color: #fff;
+  width: 100% !important;
+  height: auto !important;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: $grey-2;
+}
+.bg-for-white-icons > div {
+  float: left;
+}
+
+.iconography .big-grey-arrows {
+  margin-top: 30px;
+  width: 360px !important;
+  height: 300px !important;
+  padding: 20px;
+  /*background: $grey;*/
+}
+.iconography .big-grey-arrows > div {
+  float: left;
+}
+
+.imagery > .style-guide-section img {
+  border: 1px solid #808080;
+}
+
+.navigation > .style-guide-section hr {
+  clear: both;
+}
+
+.navigation .primary-nav {
+  background: $brand-1;
+}
+
+.navigation .footer-nav {
+  background: $grey-4;
+}
