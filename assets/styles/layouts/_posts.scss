@@ -1,5 +1,8 @@
 .main > .post {
     margin-top: 30px;
+    .block--post-header {
+      margin-bottom: 50px;
+    }
     h1 {
         @extend .h2;
     }
@@ -8,9 +11,6 @@
         line-height: 28px;
         margin-bottom: 50px;
         text-transform: uppercase;
-    }
-    .byline {
-        display: none;
     }
 }
 
@@ -21,10 +21,6 @@
     }
     .block--post-header {
       padding: 0;
-    }
-    .entry-meta {
-      padding: 0 10px;
-      margin-bottom: 30px;
     }
   }
 }

@@ -1,0 +1,36 @@
+.box-grid {
+    &__inner {
+        padding: 100px 20px;
+        text-align: center;
+        color: $white;
+        background-color: $brand-1;
+        background-size: 101% 101%;
+    }
+    .fg-image {
+        width: auto;
+        height: auto;
+    }
+}
+
+#case-studies,
+#team-profiles {
+    .box-grid__inner {
+        cursor: pointer;
+        height: 320px;
+        .title,
+        .subtitle,
+        .title-separator,
+        .copy {
+            display: none;
+        }
+        &:hover {
+            background-image: none !important;
+            .title,
+            .subtitle,
+            .title-separator,
+            .copy {
+                display: block;
+            }
+        }
+    }
+}

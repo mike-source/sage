@@ -22,6 +22,9 @@
 .centered {
     text-align: center;
 }
+.caps {
+    text-transform: uppercase;
+}
 .brand-1 {
     color: $brand-1;
 }
@@ -95,8 +98,8 @@ p {
 }
 
 .smallprint {
-    font-size: 12px !important;
-    line-height: 15px;
+    font-size: 10px !important;
+    line-height: 12px;
 }
 
 a {
@@ -131,20 +134,20 @@ h1,
 .h1 {
     font-size: 60px;
     font-weight: 700;
-    line-height: 74px;
+    line-height: 72px;
 }
 h2,
 .h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 200;
     line-height: 36px;
     text-transform: uppercase;
 }
 h3,
 .h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 24px;
 }
 h4,
 h5,
@@ -152,7 +155,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -176,15 +179,15 @@ blockquote {
 }
 
 .nav {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 24px;
     margin: 0;
     padding: 0;
     list-style: none;
     li {
         display: inline-block;
-        margin-left: -4px;
-        margin-bottom: 8px;
+        margin: 0;
+        margin-left: 0;
     }
     a {
         display: block;
@@ -198,7 +201,6 @@ blockquote {
         }
     }
     li:first-child {
-        margin-left: 0;
         a {
             padding-left: 0;
         }
@@ -243,6 +245,23 @@ blockquote {
         height: 11px;
         background-image: url('../images/icon--chevrons.png');
     }
+    &.icon--bars {
+        width: 34px;
+        height: 21px;
+        margin: 0;
+        background-image: url('../images/icon--bars.png');
+        &.icon--white {
+            background-image: url('../images/icon--bars--white.png');
+        }
+    }
+}
+
+.scroller-arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -19px;
+    cursor: pointer;
 }
 
 .btn {
@@ -275,25 +294,28 @@ blockquote {
 
 form {
     fieldset {
-        margin: 10px 0 0;
+      @extend .block-group;
+        margin: 30px 0;
         padding: 0;
         border: 0;
+        > div {
+            @extend .block;
+            width: 50%;
+            padding: 0;
+        }
         label,
         input,
         textarea {
-            display: block;
+            float: left;
+            line-height: 32px;
+            font-weight: 200;
         }
         label {
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 15px;
+            width: 30%;
             margin-bottom: 3px;
-            text-transform: uppercase;
-            color: $black;
         }
         input {
-            line-height: 30px;
-            height: 30px;
+            height: 32px;
         }
         textarea {
             height: auto;
@@ -301,19 +323,29 @@ form {
         input,
         textarea {
             font-size: 14px;
-            width: 100%;
+            width: 60%;
+            margin-bottom: 10px;
             padding: 0 8px;
-            border: 0;
-            background: $white;
-            background-image: none;
+            border: 1px solid $brand-1;
+            background: transparent;
         }
         .input--file {
             height: 34px;
             padding: 0;
         }
     }
-}
-
-.col-1__content {
-    text-align: center;
+    &.form--inv {
+      color: $white;
+      fieldset {
+        label,
+        input,
+        textarea {
+            font-weight: 100;
+        }
+        input,
+        textarea {
+          border-color: $white;
+        }
+      }
+    }
 }
