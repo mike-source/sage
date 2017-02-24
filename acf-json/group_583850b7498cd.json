@@ -64,10 +64,26 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5893707ad2532",
+                            "label": "Large Titles",
+                            "name": "large_titles",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
                             "key": "field_583851f0e257a",
                             "label": "Separate Titles",
                             "name": "separate_titles",
-                            "type": "checkbox",
+                            "type": "true_false",
                             "instructions": "Draw separating line between titles and copy.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -76,15 +92,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "true": "Enabled"
-                            },
-                            "default_value": [
-                                "true"
-                            ],
-                            "layout": "vertical",
-                            "toggle": 0,
-                            "return_format": "value"
+                            "message": "",
+                            "default_value": 0
                         },
                         {
                             "key": "field_5838527de257b",
@@ -125,6 +134,128 @@
                         },
                         {
                             "key": "field_584aec3e028e6",
+                            "label": "Bottom Margin",
+                            "name": "margin_bottom",
+                            "type": "number",
+                            "instructions": "Number of pixels margin added to the bottom of this component.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": 10
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5893767b1c3b0",
+                    "name": "testimonial",
+                    "label": "Testimonial",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5893767b1c3b5",
+                            "label": "Copy",
+                            "name": "copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_5893767b1c3b1",
+                            "label": "Name",
+                            "name": "name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5893767b1c3b2",
+                            "label": "Position",
+                            "name": "position",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5893767b1c3b4",
+                            "label": "Separate Copy",
+                            "name": "separate_titles",
+                            "type": "true_false",
+                            "instructions": "Draw separating line between the quote and the name\/position.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_5893767b1c3b6",
+                            "label": "Element ID (component)",
+                            "name": "element_id",
+                            "type": "text",
+                            "instructions": "HTML ID for this element.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5893767b1c3b7",
                             "label": "Bottom Margin",
                             "name": "margin_bottom",
                             "type": "number",
@@ -481,13 +612,74 @@
                             "button_label": "Add Slide",
                             "sub_fields": [
                                 {
+                                    "key": "field_5882521653f5b",
+                                    "label": "Slide Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "text": "Text",
+                                        "image": "Image"
+                                    },
+                                    "default_value": [
+                                        "image"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_588252a053f5c",
+                                    "label": "Text",
+                                    "name": "wysiwyg",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5882521653f5b",
+                                                "operator": "==",
+                                                "value": "text"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                },
+                                {
                                     "key": "field_583c70e67f84d",
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
-                                    "conditional_logic": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5882521653f5b",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -511,7 +703,15 @@
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
-                                    "conditional_logic": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5882521653f5b",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -530,7 +730,15 @@
                                     "type": "page_link",
                                     "instructions": "",
                                     "required": 0,
-                                    "conditional_logic": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5882521653f5b",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -1022,5 +1230,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481306766
+    "modified": 1486059237
 }

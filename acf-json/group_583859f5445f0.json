@@ -1,7 +1,56 @@
 {
     "key": "group_583859f5445f0",
-    "title": "Layout Section Background",
+    "title": "Every Layout Section",
     "fields": [
+        {
+            "key": "field_58878075e7609",
+            "label": "Top Margin",
+            "name": "margin_top",
+            "type": "number",
+            "instructions": "Number of pixels margin to add to top of this layout's wrapper.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 10
+        },
+        {
+            "key": "field_588a3356b45f4",
+            "label": "Width",
+            "name": "width",
+            "type": "select",
+            "instructions": "Normal = 1000 px, \r\nWide = 1400px, \r\nFull = 100%",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "wide": "Wide",
+                "full": "Full"
+            },
+            "default_value": [
+                "normal"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
         {
             "key": "field_583859fb67b85",
             "label": "Enable Background Colour",
@@ -40,6 +89,29 @@
                 "id": ""
             },
             "default_value": "#0682C5"
+        },
+        {
+            "key": "field_58824a6623dad",
+            "label": "Font Colour",
+            "name": "color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583859fb67b85",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
         },
         {
             "key": "field_58385a4f67b87",
@@ -87,7 +159,7 @@
             "max_width": "",
             "max_height": "",
             "max_size": 1,
-            "mime_types": "png,jpg,jpeg"
+            "mime_types": "png,jpg,jpeg,svg"
         }
     ],
     "location": [
@@ -107,5 +179,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481306300
+    "modified": 1485455036
 }

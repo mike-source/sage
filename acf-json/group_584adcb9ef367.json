@@ -3,11 +3,11 @@
     "title": "Page Header",
     "fields": [
         {
-            "key": "field_584adcc5cb17b",
+            "key": "field_5893856cb280e__trashed",
             "label": "Show Page Header",
             "name": "show_page_header",
             "type": "true_false",
-            "instructions": "Shows the page title at the top of the page.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "message": "",
-            "default_value": 1
+            "default_value": 0
         }
     ],
     "location": [
@@ -45,5 +45,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1481306509
+    "modified": 1487950711
 }
