@@ -41,6 +41,14 @@
             </div>
 <?php endif;
 
+      if(get_row_layout() == 'video_embed'):
+?>
+      <div <?php if(get_sub_field('element_id')): ?>id="<?php echo str_replace(' ', '-', strtolower(get_sub_field('element_id'))); ?>" <?php endif;?>class="video-embed"<?php if(get_sub_field('margin_bottom') != 0): ?> style="margin-bottom: <?php the_sub_field('margin_bottom'); ?>px;"<?php endif; ?>>
+        <?php get_template_part('templates/components/video-embed'); ?>
+
+      </div>
+<?php endif;
+
       if(get_row_layout() == 'accordion'):
 ?>
             <div <?php if(get_sub_field('element_id')): ?>id="<?php echo str_replace(' ', '-', strtolower(get_sub_field('element_id'))); ?>" <?php endif;?>class="accordion"<?php if(get_sub_field('margin_bottom') != 0): ?> style="margin-bottom: <?php the_sub_field('margin_bottom'); ?>px;"<?php endif; ?>>
