@@ -1,3 +1,21 @@
+# [Atomic Sage 8.5.1](https://github.com/mike-source/sage)
+'Atomic Sage' is a fork of the Sage Wordpress theme (from the Roots project) which takes on board 'Atomic Design' principles. The fork is currently synced to Sage 8.5.1 and is maintained by the [Unbranded](https://unbrandedmanchester.com) development team for use with our client projects. The main differences from the original Sage are as follows:
+
+* No Bootstrap! - Twitter Bootstrap has been completely removed in place of a custom SCSS based framework (why? because Bootstrap's grid system is stupidly bloated and in practice, no serious designer ever seems to want to use any of Bootstrap's default component styles anyway).
+* Template system has been rebuilt inline with [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) inspired 'layouts' and 'components'. Additional integration with [Advanced Custom Fields](https://www.advancedcustomfields.com/) has been incorporated to allow a layout builder, based on our design system to be integrated within the Wordpress admin area. This means **ACF Pro version 5+ is required**.
+* Removed Wordpress Emoji Support.
+* Added [PocketGrid](http://arnaudleray.github.io/pocketgrid/) (a much more elegant grid system based loosely on Chris Coyier's '[don't overthink it grids](https://css-tricks.com/dont-overthink-it-grids/)')
+* Added [FontAwesome](http://fontawesome.io/)
+* Added [Normalize.css](https://necolas.github.io/normalize.css/)
+* Added [HTML5Shiv](https://github.com/aFarkas/html5shiv)
+* Added [Respond JS](https://github.com/scottjehl/Respond)
+* Added [imagesLoaded](https://imagesloaded.desandro.com/)
+* Added [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
+
+Additional documentation for the custom framework and layout builder can be found [here](#).
+
+Most of the original Sage 8 documentation regarding installation and development using the gulp workflow still applies and is found below. At time of writing, Sage 9 is in it's 3rd beta and when it is released, the documentation on the Roots/Sage website and github will almost certainly change. The documentation below is for Sage 8 and will remain here as a reference.
+
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
