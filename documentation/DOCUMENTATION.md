@@ -1,9 +1,9 @@
-#Documentation
+# Documentation
 
 
-##A Brief Intro to Atomic DesignThe layout/templating system used in this theme is intended to be used with our internal design system, inspired by and based on Brad Frost's 'Atomic Design'. To properly understand the thinking behind this system (which will not seem intuitive otherwise) it is worthwhile familiarising yourself with the basics. The introductory article provides enough information to give a background and is about a 10 minute read. Most of what is written below will make very little sense without this as a background. 
+## A Brief Intro to Atomic DesignThe layout/templating system used in this theme is intended to be used with our internal design system, inspired by and based on Brad Frost's 'Atomic Design'. To properly understand the thinking behind this system (which will not seem intuitive otherwise) it is worthwhile familiarising yourself with the basics. The introductory article provides enough information to give a background and is about a 10 minute read. Most of what is written below will make very little sense without this as a background. 
 
-Find it here: [http://bradfrost.com/blog/post/atomic-web-design/](http://bradfrost.com/blog/post/atomic-web-design/)##The 'Unbranded Atomic Design System'
+Find it here: [http://bradfrost.com/blog/post/atomic-web-design/](http://bradfrost.com/blog/post/atomic-web-design/)## The 'Unbranded Atomic Design System'
 
 The design system we have chosen differs slightly from the 'default' naming scheme used by Brad Frost, but the logic behind it is fundamentally the same.
 
@@ -12,7 +12,7 @@ Specifically the default 'Atomic' hierarchy:> Atoms < Molecules < Organisms < 
 
 **Don't worry if this is confusing!** This can all be described better visually.
 
-###Layouts & Blocks
+### Layouts & Blocks
 
 'Pages' and 'Templates' should be familiar and self explanatory.
 
@@ -35,7 +35,7 @@ The 1 Col layout is unique in that it's one block will always be 100% width. For
 **We. Do. Not. Use. Pre-defined. Breakpoints.** Don't freak out Bootstrap fans! (you know they never made any sense in the real world).
 
 
-###Default Layouts
+### Default Layouts
 
 The default layouts can be found in the `/templates/layouts/` directory and any addtional layouts should go here.
 
@@ -113,13 +113,13 @@ The beauty of using SASS/SCSS is we can write nice elegant looking SCSS like the
 Finally, our *layout* which is actually fully contained within `<div class="container"></div>`, is placed in a 'wrapper' div. The wrapper div will usually be 100% of the viewport width at all screen sizes, and is there to accomodate designs where control of the background is needed outside the container width. Normally the container will sit within it's wrapper, centered using something like: `{ width: 100%; max-width: 1400px; margin: 0 auto; }`
 
 
-###Default Block
+### Default Block
 
 All of our default layouts currently load the default block using the Wordpress function: `get_template_part('templates/blocks/default');`
 
 The file `/templates/blocks/default.php` contains code which enables the user to choose *Components* via ACF Fields in the Wordpress admin backend. The default block simply contains all possible components.
 
-<center>![Blocks](block-sizes.png "Blocks")</center>- You can think of the 10 default/base *layouts*, as being built from the 8 possible *block* sizes above.- Default site *components* should be designed to work at as many *block* sizes as possible. Which means we need to be aware of all of the widths each block can end up being rendered at.- Some of our *components* might not work at every *block* size, in these cases we can extend our system by separating available components into e.g. a 'narrow' and a 'wide' block, instead of just 'default', these blocks would only contain subsets of components that work at all possible widths *at which that block can occur*. Your layout template would then call e.g. `get_template_part('templates/blocks/wide');` in certain positions and `get_template_part('templates/blocks/narrow');` in others.##Working with responsive block sizes and componentsOnce again, this is easier to understand using an example.
+<center>![Blocks](block-sizes.png "Blocks")</center>- You can think of the 10 default/base *layouts*, as being built from the 8 possible *block* sizes above.- Default site *components* should be designed to work at as many *block* sizes as possible. Which means we need to be aware of all of the widths each block can end up being rendered at.- Some of our *components* might not work at every *block* size, in these cases we can extend our system by separating available components into e.g. a 'narrow' and a 'wide' block, instead of just 'default', these blocks would only contain subsets of components that work at all possible widths *at which that block can occur*. Your layout template would then call e.g. `get_template_part('templates/blocks/wide');` in certain positions and `get_template_part('templates/blocks/narrow');` in others.## Working with responsive block sizes and componentsOnce again, this is easier to understand using an example.
 
 First, consider what we already know:
 
@@ -155,7 +155,7 @@ To make our life much easier, we could sort these blocks into two groups:
 You could design different components for each group. Some components could work in both groups, some in just one, you would then duplicate and alter the code in `/templates/blocks/default.php` and the layout templates accordingly, to add or remove the appropriate available components within each block.
 
 
-#####Important points:- There will almost always be cases where a component simply can’t work in both groups, or at mobile size and desktop size with the same markup (without extremely hacky css which nobody will understand months later!). After wireframing to scope out what our width limits are likely to be, we should first try to avoid this problem with clever design. When that isn't possible; when we do come to code, we are already at a huge advantage by knowing these cases beforehand. We can just give some components more than one design to cover different width ranges.	In an example scenario, for a 'Callback Form' component: 
+##### Important points:- There will almost always be cases where a component simply can’t work in both groups, or at mobile size and desktop size with the same markup (without extremely hacky css which nobody will understand months later!). After wireframing to scope out what our width limits are likely to be, we should first try to avoid this problem with clever design. When that isn't possible; when we do come to code, we are already at a huge advantage by knowing these cases beforehand. We can just give some components more than one design to cover different width ranges.	In an example scenario, for a 'Callback Form' component: 
 	
 	- `/templates/components/callback-form.php` is used in block sizes 1 - 4 (320px - 1200px widths)
 		- `/templates/components/callback-form--narrow.php` is used in block sizes 5 - 8 (would need to work at 200px - 600px widths)- Both of those php template files, could even pull in the same ACF fields. The fact there are separate template files can be made imperceptible from within Wordpress admin, it is simply a way for us to have tidy markup/css that adds the correct CSS selectors and is spitting out markup that can be tidily styled to the design.

@@ -12,7 +12,7 @@
 * Added [imagesLoaded](https://imagesloaded.desandro.com/)
 * Added [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 
-Additional documentation for the custom framework and layout builder can be found [here](#).
+Additional documentation for the custom framework and layout builder can be found [here](https://github.com/mike-source/sage/blob/master/documentation/DOCUMENTATION.md).
 
 Most of the original Sage 8 documentation regarding installation and development using the gulp workflow still applies and is found below. At time of writing, Sage 9 is in it's 3rd beta and when it is released, the documentation on the Roots/Sage website and github will almost certainly change. The documentation below is for Sage 8 and will remain here as a reference.
 
