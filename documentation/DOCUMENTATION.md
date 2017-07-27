@@ -8,7 +8,7 @@ Find it here: [http://bradfrost.com/blog/post/atomic-web-design/](http://bradfro
 The design system we have chosen differs slightly from the 'default' naming scheme used by Brad Frost, but the logic behind it is fundamentally the same.
 
 Specifically the default 'Atomic' hierarchy:> Atoms < Molecules < Organisms < Templates < PagesBecomes:> Elements < Components < **Blocks** < Layouts < Templates < PagesThe main differences to note are:* We've dropped the chemistry inspired naming system in favour of something slightly (in our opinion) more self descriptive (Atoms = Elements, Molecules = Components etc.)
-* We split the 'Organisms' level into two: 'Blocks' and 'Layouts'. By default, there is just one 'Block' type, which can contain all possible components, but this adds the possibilty of having variations of the default block, which can only use a subset of the components. Which means we can easily design and implement components that don't have to work at every possible block size.
+* We split the 'Organisms' level into two: 'Blocks' and 'Layouts'. By default, there is just one 'Block' type, which can contain all possible components, but this adds the possibility of having variations of the default block, which can only use a subset of the components. Which means we can easily design and implement components that don't have to work at every possible block size.
 
 **Don't worry if this is confusing!** This can all be described better visually.
 
@@ -28,7 +28,7 @@ To take the simplest example, a '1 Col' layout (1 Column), has 1 *Block* in it, 
 
 The key thing to understand is that any components built for this block will have to work at a minimum of 320px width (100% width at iPhone 4 size), all the way up to whatever the maximum width of the layout's container is (typically 1200 - 1400px).
 
-**Note - 'Maximum' container width is deliberatly not discussed since it will vary depending on the site and design, wherever possible, we try to work in percentage widths.**
+**Note - 'Maximum' container width is deliberately not discussed since it will vary depending on the site and design, wherever possible, we try to work in percentage widths.**
 
 The 1 Col layout is unique in that it's one block will always be 100% width. For all of the rest, depending on the situation, the block widths will probably change at a given break point. Unlike something like Bootstrap, we don't use pre-defined breakpoints. **We do not use pre-defined breakpoints.** 
 
@@ -37,7 +37,7 @@ The 1 Col layout is unique in that it's one block will always be 100% width. For
 
 ### Default Layouts
 
-The default layouts can be found in the `/templates/layouts/` directory and any addtional layouts should go here.
+The default layouts can be found in the `/templates/layouts/` directory and any additional layouts should go here.
 
 To help understand the pattern and how these layouts are ultimately coded - these are all the (desktop) widths  for the blocks in each layout. 
 
@@ -63,7 +63,7 @@ Coming from a grid system like the one in Bootstrap, or Foundation, this may see
 
 Most of the code that forms the basis of this grid system is provided by [PocketGrid](http://arnaudleray.github.io/pocketgrid/) which uses ideas similar to Chris Coyier's '[don't overthink it grids](https://css-tricks.com/dont-overthink-it-grids/)' (it also manages to do this in 43 lines of CSS vs. Bootstrap grid's hundreds of lines, multiple files, mixins, negative margins and excessive markup). Both of the links above are relatively easy reading - building grid systems from scratch will no longer be a mystery to you!
 
-To better understand lets look at some markup:
+To better understand let's look at some markup:
 
 ```
       <div class="wrapper col-1-1-1-1">
@@ -110,7 +110,7 @@ The beauty of using SASS/SCSS is we can write nice elegant looking SCSS like the
 > Note: Admittedly, this could all be re-written to be 'mobile-first', but within our system, we focus on components which fit in blocks, and it is at the component level where we really need to think 'mobile-first'. There is a tendency for grid columns to end up being 100% width on mobile, regardless of their desktop layout, so when looking at the *Layout* layer, it makes some sense to think 'desktop first'. In practice, prioritising design for mobile vs. desktop is a decision which will be made on a per project basis.
 
 
-Finally, our *layout* which is actually fully contained within `<div class="container"></div>`, is placed in a 'wrapper' div. The wrapper div will usually be 100% of the viewport width at all screen sizes, and is there to accomodate designs where control of the background is needed outside the container width. Normally the container will sit within it's wrapper, centered using something like: `{ width: 100%; max-width: 1400px; margin: 0 auto; }`
+Finally, our *layout* which is actually fully contained within `<div class="container"></div>`, is placed in a 'wrapper' div. The wrapper div will usually be 100% of the viewport width at all screen sizes, and is there to accommodate designs where control of the background is needed outside the container width. Normally the container will sit within its wrapper, centered using something like: `{ width: 100%; max-width: 1400px; margin: 0 auto; }`
 
 
 ### Default Block
@@ -126,11 +126,11 @@ First, consider what we already know:
 
 - To be suitable for smaller mobile screens, components need to work at **320px wide**.
 - If the max *layout* container width is 1200px, in a 1-1-1-1 Col layout, each ('size 8') block would be **300px wide**. 
-- As the viewport is narrowed and gets close to a media query breakpoint (like near 800px in the example SCSS snippet above) our 4 columns in the 1-1-1-1 layout still display '4 accross' horizontally, down to 800px viewport width. At this size the smallest desktop block size works out to approx **200px wide**. 
+- As the viewport is narrowed and gets close to a media query breakpoint (like near 800px in the example SCSS snippet above) our 4 columns in the 1-1-1-1 layout still display '4 across' horizontally, down to 800px viewport width. At this size the smallest desktop block size works out to approx **200px wide**. 
 
 Based on this information simply designing every possible *component* to work at 200px width, up to 1200px width (i.e. every possible *block* width) would cover all possibilities.
 
-The liklehood of being able to design such flexible *components* that work at all those sizes is obviously quite slim! This is why anything more than very basic component design is something that needs to be thought out carefully **before any code is written** (and why we have a design process in place that puts a strong focus on **wireframing** everything beforehand, even if it is on paper).
+The likelihood of being able to design such flexible *components* that work at all those sizes is obviously quite slim! This is why anything more than very basic component design is something that needs to be thought out carefully **before any code is written** (and why we have a design process in place that puts a strong focus on **wireframing** everything beforehand, even if it is on paper).
 
 Take a look at this simplified wireframe of a *template*, made up of a series of 6 *layouts*:
 
@@ -139,7 +139,7 @@ Take a look at this simplified wireframe of a *template*, made up of a series of
 
 In this example, look at what we can deduce about each block:
 
-| Block Size    | Min Occuring Width | Max Occuring Width |
+| Block Size    | Min Occurring Width | Max Occurring Width |
 | :-----------: |:------------------:|:------------------:|
 | 1             | 320px              | 1200px             |
 | 4             | 320px              | ~740px             |
