@@ -1,0 +1,89 @@
+p {
+    margin: 0 0 20px;
+}
+
+.lead {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.smallprint {
+    font-size: 1rem !important;
+    line-height: 1.6;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: $brand-2;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-1 !important;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0 0 10px 0;
+}
+h1,
+.h1 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+h2,
+.h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+h3,
+.h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+
+hr {
+    width: 40px;
+    margin: 30px auto;
+    border: 1px solid $black;
+    border-top: 0;
+}
+
+blockquote {
+    font-style: italic;
+}

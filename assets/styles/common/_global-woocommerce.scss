@@ -1,0 +1,235 @@
+.wrapper--single-product,
+.wrapper--archive-product {
+    .col-1__block {
+        text-align: left;
+    }
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    height: auto;
+
+    @extend .btn;
+    &.alt {
+        @extend .btn--inv;
+    }
+    &.disabled,
+    &:disabled,
+    &:disabled[disabled] {
+        padding: 12px 35px;
+        opacity: 0.25;
+        background-color:black!important;
+    }
+}
+
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+    font-weight: 600;
+}
+
+.woocommerce form.woocommerce-checkout {
+    label {
+        float: left;
+    }
+}
+
+.woocommerce form .form-row label,
+.woocommerce-page form .form-row label {
+    float: left;
+}
+
+.woocommerce form.woocommerce-checkout .wc_payment_method label {
+    float: none;
+}
+
+.woocommerce form.woocommerce-checkout .wc_payment_method.payment_method_stripe {
+    img{
+      width: 50px;
+    }
+}
+
+#add_payment_method,
+.woocommerce-cart,
+.woocommerce-checkout {
+    #payment .payment_method_paypal img {
+        width: auto;
+        max-height: 52px;
+    }
+}
+
+.woocommerce-info {
+    border-top-color: $validation-blue !important;
+    &:before {
+      color: $validation-blue;
+    }
+}
+
+.woocommerce-message {
+    border-top-color: $validation-green !important;
+}
+
+.woocommerce-error {
+    border-top-color: $validation-red !important;
+}
+
+.woocommerce a.remove{
+  color: $validation-red !important;
+  line-height: 1.1 !important;
+
+  &:hover{
+    background: $validation-red !important;
+  }
+}
+
+.woocommerce form .form-row .required{
+    color: $validation-red !important;
+    text-decoration: none;
+}
+
+.woocommerce-breadcrumb{
+  text-transform: uppercase;
+  font-size: 12px!important;
+  padding-left: 10px!important;
+
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+    margin: 0;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1.5em;
+}
+
+.product_title{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 15px!important;
+}
+
+.woocommerce-form__label-for-checkbox{
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 0px;
+
+  span{
+    vertical-align: top;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+.woocommerce-product-details__short-description{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.product-addon{
+  margin-top: 0 !important;
+  margin-bottom: 40px !important;
+  h3.addon-name{
+    display: none;
+  }
+  p.form-row{
+    padding: 0;
+    width: 100%;
+    display: table;
+
+    label{
+      display: table-cell;
+      float: none;
+      width: 30%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    input{
+      display: table-cell;
+      float: none;
+      border-color: #a6a6a6;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}
+
+.reset_variations{
+  display: none !important;
+}
+
+.variations{
+  margin-bottom: 0 !important;
+
+  td.label{
+    width: 30%;
+  }
+
+  select{
+    font-size: 14px !important;
+  }
+}
+
+.woocommerce form{
+  input[type='text']{
+    height: 40px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+
+  input[type='select']{
+    height: 40px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+
+  input[type='email']{
+    height: 40px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+
+  input[type='password']{
+    height: 40px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+
+  input[type='tel']{
+    height: 40px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+
+  textarea{
+    height: auto;
+    min-height: 200px;
+    padding: 10px;
+    border-color: #a6a6a6 !important;
+  }
+}
+
+#customer_details{
+  margin-bottom: 50px;
+}
+
+.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select{
+  border-color: $validation-red !important;
+}
+
+.price_slider_amount{
+  .button{
+    margin-top: 50px !important;
+  }
+  .price_label{
+    text-align: center;
+    position: absolute;
+  }
+}

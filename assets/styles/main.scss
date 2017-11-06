@@ -9,27 +9,33 @@
 // endbower
 
 @import "common/reset";
-@import "components/grid";
+@import "common/grid";
+@import "common/grid--flex";
+@import "common/brand";
 
 /*! fonts: */
 @import "../fonts/roboto/stylesheet";
 @import "../fonts/roboto-condensed/stylesheet";
 @import "../fonts/lato/stylesheet";
+@import "common/typography";
 
 /*! unb custom css: */
 @import "layouts/style-guide";
 @import "layouts/base";
 @import "common/global";
-@import "components/wp-classes";
-@import "components/header";
-@import "components/sidebar";
-@import "components/footer";
-@import "components/archive";
-@import "components/slider";
-@import "components/accordion";
-@import "components/image--title-overlay";
-@import "components/testimonial";
+@import "common/wp-classes";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+@import "layouts/archive";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
 @import "layouts/box-grid";
+@import "components/slider";
+@import "components/accordion";
+@import "components/image--title-overlay";
+@import "components/testimonial";
+
+/*! woocommerce: */
+@import "common/global-woocommerce";
